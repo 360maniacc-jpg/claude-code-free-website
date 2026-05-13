@@ -471,7 +471,7 @@ export default function App() {
                     {(!device || device === 'windows') && (
                       <div className="space-y-4 pt-4">
                          <p className="text-xs font-mono text-zinc-400 italic">Windows PowerShell Command:</p>
-                         <CodeBlock code="mkdir -p $env:USERPROFILE\.claude; notepad $env:USERPROFILE\.claude\settings.json" language="powershell" />
+                         <CodeBlock code="$env:USERPROFILE\.claude\settings.json" language="powershell" />
                          <p className="text-sm text-zinc-500 font-medium italic mt-2">Running this will open a Notepad window.</p>
                       </div>
                     )}
